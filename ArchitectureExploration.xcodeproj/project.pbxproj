@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163BF730881B9C5529BD7EEB /* libPods-ArchitectureExploration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32166A4CFD0279FD18FA9E11 /* libPods-ArchitectureExploration.a */; };
 		6702DCE3224C6A5600973640 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6702DCE2224C6A5600973640 /* AppDelegate.m */; };
 		6702DCE6224C6A5600973640 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6702DCE5224C6A5600973640 /* ViewController.m */; };
 		6702DCE9224C6A5600973640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6702DCE7224C6A5600973640 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32166A4CFD0279FD18FA9E11 /* libPods-ArchitectureExploration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArchitectureExploration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6702DCDE224C6A5600973640 /* ArchitectureExploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureExploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6702DCE1224C6A5600973640 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6702DCE2224C6A5600973640 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6702DCED224C6A5700973640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6702DCEF224C6A5700973640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6702DCF0224C6A5700973640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86B863098781489E918C2016 /* Pods-ArchitectureExploration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureExploration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureExploration/Pods-ArchitectureExploration.debug.xcconfig"; sourceTree = "<group>"; };
+		AC5208085F2A347632643731 /* Pods-ArchitectureExploration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureExploration.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureExploration/Pods-ArchitectureExploration.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163BF730881B9C5529BD7EEB /* libPods-ArchitectureExploration.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113A87E76E9EB5D6E1DB6EA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32166A4CFD0279FD18FA9E11 /* libPods-ArchitectureExploration.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6702DCD5224C6A5600973640 = {
 			isa = PBXGroup;
 			children = (
 				6702DCE0224C6A5600973640 /* ArchitectureExploration */,
 				6702DCDF224C6A5600973640 /* Products */,
+				C96C430373EC641FF6068CB3 /* Pods */,
+				113A87E76E9EB5D6E1DB6EA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = ArchitectureExploration;
 			sourceTree = "<group>";
 		};
+		C96C430373EC641FF6068CB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86B863098781489E918C2016 /* Pods-ArchitectureExploration.debug.xcconfig */,
+				AC5208085F2A347632643731 /* Pods-ArchitectureExploration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6702DCF4224C6A5700973640 /* Build configuration list for PBXNativeTarget "ArchitectureExploration" */;
 			buildPhases = (
+				772D8320B60629AACF869E59 /* [CP] Check Pods Manifest.lock */,
 				6702DCDA224C6A5600973640 /* Sources */,
 				6702DCDB224C6A5600973640 /* Frameworks */,
 				6702DCDC224C6A5600973640 /* Resources */,
+				B3093CC26380DC8741F85C02 /* [CP] Embed Pods Frameworks */,
+				EA867F097DB3AB01EA4D6BB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		772D8320B60629AACF869E59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArchitectureExploration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3093CC26380DC8741F85C02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectureExploration/Pods-ArchitectureExploration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA867F097DB3AB01EA4D6BB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitectureExploration/Pods-ArchitectureExploration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6702DCDA224C6A5600973640 /* Sources */ = {
@@ -283,14 +361,12 @@
 		};
 		6702DCF5224C6A5700973640 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B863098781489E918C2016 /* Pods-ArchitectureExploration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArchitectureExploration/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixianjun.ArchitectureExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,14 +375,12 @@
 		};
 		6702DCF6224C6A5700973640 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5208085F2A347632643731 /* Pods-ArchitectureExploration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArchitectureExploration/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixianjun.ArchitectureExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
