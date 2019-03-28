@@ -14,6 +14,8 @@
 		6702DCEB224C6A5700973640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6702DCEA224C6A5700973640 /* Assets.xcassets */; };
 		6702DCEE224C6A5700973640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6702DCEC224C6A5700973640 /* LaunchScreen.storyboard */; };
 		6702DCF1224C6A5700973640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6702DCF0224C6A5700973640 /* main.m */; };
+		6702DD1D224C74A500973640 /* UITableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6702DD1C224C74A500973640 /* UITableViewCellModel.m */; };
+		6702DD20224CC86800973640 /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6702DD1F224CC86800973640 /* RequestViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		6702DCED224C6A5700973640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6702DCEF224C6A5700973640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6702DCF0224C6A5700973640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6702DD1B224C74A500973640 /* UITableViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UITableViewCellModel.h; path = ../../../../../Desktop/UITableViewCellModel.h; sourceTree = "<group>"; };
+		6702DD1C224C74A500973640 /* UITableViewCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UITableViewCellModel.m; path = ../../../../../Desktop/UITableViewCellModel.m; sourceTree = "<group>"; };
+		6702DD1E224CC86800973640 /* RequestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RequestViewModel.h; path = ../../../../../Desktop/RequestViewModel.h; sourceTree = "<group>"; };
+		6702DD1F224CC86800973640 /* RequestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RequestViewModel.m; path = ../../../../../Desktop/RequestViewModel.m; sourceTree = "<group>"; };
 		86B863098781489E918C2016 /* Pods-ArchitectureExploration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureExploration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureExploration/Pods-ArchitectureExploration.debug.xcconfig"; sourceTree = "<group>"; };
 		AC5208085F2A347632643731 /* Pods-ArchitectureExploration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureExploration.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitectureExploration/Pods-ArchitectureExploration.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +79,8 @@
 		6702DCE0224C6A5600973640 /* ArchitectureExploration */ = {
 			isa = PBXGroup;
 			children = (
+				6702DD1A224C746E00973640 /* BaseClass */,
+				6702DD19224C741200973640 /* CodeTree */,
 				6702DCE1224C6A5600973640 /* AppDelegate.h */,
 				6702DCE2224C6A5600973640 /* AppDelegate.m */,
 				6702DCE4224C6A5600973640 /* ViewController.h */,
@@ -84,6 +92,24 @@
 				6702DCF0224C6A5700973640 /* main.m */,
 			);
 			path = ArchitectureExploration;
+			sourceTree = "<group>";
+		};
+		6702DD19224C741200973640 /* CodeTree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeTree;
+			sourceTree = "<group>";
+		};
+		6702DD1A224C746E00973640 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				6702DD1B224C74A500973640 /* UITableViewCellModel.h */,
+				6702DD1C224C74A500973640 /* UITableViewCellModel.m */,
+				6702DD1E224CC86800973640 /* RequestViewModel.h */,
+				6702DD1F224CC86800973640 /* RequestViewModel.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		C96C430373EC641FF6068CB3 /* Pods */ = {
@@ -222,6 +248,8 @@
 				6702DCE6224C6A5600973640 /* ViewController.m in Sources */,
 				6702DCF1224C6A5700973640 /* main.m in Sources */,
 				6702DCE3224C6A5600973640 /* AppDelegate.m in Sources */,
+				6702DD1D224C74A500973640 /* UITableViewCellModel.m in Sources */,
+				6702DD20224CC86800973640 /* RequestViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +394,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArchitectureExploration/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixianjun.ArchitectureExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +411,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArchitectureExploration/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixianjun.ArchitectureExploration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
