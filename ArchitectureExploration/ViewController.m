@@ -8,6 +8,7 @@
 #import <JKCategories/JKCategories.h>
 #import "ViewController.h"
 #import "UITableViewCellModel.h"
+#import <ReactiveObjC.h>
 
 @interface ViewController ()
 
@@ -21,7 +22,32 @@
     [super viewDidLoad];
     
 
-    // Do any additional setup after loading the view.
+    RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        
+        NSLog(@"input : %@", input);
+       
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+           
+            [subscriber sendNext:@"发送数据"];
+            
+            [subscriber sendError:[NSError errorWithDomain:@"错误" code:-1 userInfo:@{@"error" : @"hhhhh"}]];
+            
+            [subscriber sendCompleted];
+            
+            return nil;
+        }];
+    }];
+    
+    [command execute:@{@"name" : @"shixianjun"}];
+    
+    [command.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        NSLog(@"x : %@", x);
+    } error:^(NSError * _Nullable error) {
+        NSLog(@"error : %@", error);
+    } completed:^{
+        NSLog(@"完成");
+    }];
+    
 }
 
 

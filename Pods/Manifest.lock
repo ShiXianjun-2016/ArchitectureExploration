@@ -143,18 +143,18 @@ PODS:
     - JKCategories/UIKit/UIColor
   - JKCategories/UIKit/UIWindow (1.8.1)
   - Masonry (1.1.0)
-  - ReactiveObjC (3.1.0)
+  - ReactiveObjC (3.0.0)
 
 DEPENDENCIES:
   - JKCategories (~> 1.8.1)
   - Masonry (~> 1.1.0)
-  - ReactiveObjC (~> 3.1.0)
+  - ReactiveObjC (~> 3.0.0)
 
 SPEC CHECKSUMS:
   JKCategories: d5fecfa4f790685ea20daea319f74a8701d4c3ab
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
 
-PODFILE CHECKSUM: f87c2244bbde356aa7b3fb8a5e4c7723e03edf79
+PODFILE CHECKSUM: e6c855555b6757d4799b025e6dc4f50f7b129d21
 
 COCOAPODS: 1.4.0
